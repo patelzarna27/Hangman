@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to Hangman</title>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="words.js"></script>
+    <script type="text/javascript" src="myLogic.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron text-center">
+            <h1>Welcome to Hangman Game</h1>
+        </div>
+    </header>
+    <section>
+        <div class="container text-center">
+            <div class="row page-header">
+    				<h2 id="phrase"></h2>
+            </div>
+            <div class="row">
+                <h1 id="selWord"></h1>
+            </div>
+            <div class="row">
+                <div class="btn-group" role="group" id="buttons"></div>
+            </div>
+            <div class="row" id="looser">
+                <h1>GOMAE OVE!</h1>
+            </div>
+            <div class="row" id="winner">
+                <h1>Congratulation!</h1>
+            </div>
+            <div class="row" id="Hangman">
+            <br/>
+             <canvas id="stage" width="200" height="200" >Sorry, your browser needs to support canvas for this game.</canvas>
+            </div>
+            <div class="row" id="reload">
+               <button id="btnReload" class="btn btn-default">New Game</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
